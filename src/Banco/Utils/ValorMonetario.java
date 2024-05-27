@@ -1,7 +1,11 @@
-package Utils;
+package Banco.Utils;
 
 public class ValorMonetario {
     private double valor;
+
+    public ValorMonetario(double valor) {
+        this.valor = valor;
+    }
 
     public double getValor() {
         return valor;
@@ -16,7 +20,11 @@ public class ValorMonetario {
     }
 
     public void subtrait(ValorMonetario valor) {
-        this.valor -= valor.valor
+        this.valor -= valor.valor;
     }
 
+    @Override
+    public String toString() {
+        return "R$: " + valor;
+    }
 }

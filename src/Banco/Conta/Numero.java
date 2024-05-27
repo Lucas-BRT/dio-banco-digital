@@ -1,4 +1,4 @@
-package Conta.NumeroDeConta;
+package Banco.Conta;
 
 public class Numero {
     private int numero;

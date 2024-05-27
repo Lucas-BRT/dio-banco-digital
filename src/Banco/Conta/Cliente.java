@@ -1,19 +1,24 @@
-package Conta;
-import Utils.ValorMonetario;
+package Banco.Conta;
+import Banco.Utils.ValorMonetario;
 
 public class Cliente {
     private String nome;
     private int idade;
     private ValorMonetario rendaMensal;
 
-    public String getNome() {
-        return nome;
-    }
-
     public Cliente(String nome, int idade, ValorMonetario rendaMensal) {
         this.nome = nome;
         this.idade = idade;
         this.rendaMensal = rendaMensal;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente: " + nome + " " + idade + " Anos";
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     public void setNome(String nome) {
